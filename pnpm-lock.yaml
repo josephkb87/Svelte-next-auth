@@ -340,10 +340,10 @@ importers:
         version: 0.19.12
       drizzle-orm:
         specifier: ^0.28.6
-        version: 0.28.6(@types/better-sqlite3@7.6.4)(better-sqlite3@8.6.0)(mysql2@3.6.0)(postgres@3.3.5)
+        version: 0.28.6(@types/better-sqlite3@7.6.4)(better-sqlite3@8.6.0)(mysql2@3.9.8)(postgres@3.3.5)
       mysql2:
-        specifier: ^3.2.0
-        version: 3.6.0
+        specifier: ^3.9.8
+        version: 3.9.8
       postgres:
         specifier: ^3.3.4
         version: 3.3.5
@@ -435,8 +435,8 @@ importers:
         specifier: ^0.24.2
         version: 0.24.2
       mysql2:
-        specifier: ^3.2.0
-        version: 3.6.0
+        specifier: ^3.9.8
+        version: 3.9.8
       pg:
         specifier: ^8.10.0
         version: 8.11.2
@@ -10571,6 +10571,7 @@ packages:
 
   /@types/unist@2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
+    requiresBuild: true
 
   /@types/unist@3.0.1:
     resolution: {integrity: sha512-ue/hDUpPjC85m+PM9OQDMZr3LywT+CT6mPsQq8OJtCLiERkGRcQUFvu9XASF5XWqyZFXbf15lvb3JFJ4dRLWPg==}
@@ -11140,6 +11141,7 @@ packages:
 
   /abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
+    requiresBuild: true
     dev: true
 
   /abort-controller@3.0.0:
@@ -14438,7 +14440,7 @@ packages:
       - supports-color
     dev: true
 
-  /drizzle-orm@0.28.6(@types/better-sqlite3@7.6.4)(better-sqlite3@8.6.0)(mysql2@3.6.0)(postgres@3.3.5):
+  /drizzle-orm@0.28.6(@types/better-sqlite3@7.6.4)(better-sqlite3@8.6.0)(mysql2@3.9.8)(postgres@3.3.5):
     resolution: {integrity: sha512-yBe+F9htrlYER7uXgDJUQsTHFoIrI5yMm5A0bg0GiZ/kY5jNXTWoEy4KQtg35cE27sw1VbgzoMWHAgCckUUUww==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
@@ -14502,7 +14504,7 @@ packages:
     dependencies:
       '@types/better-sqlite3': 7.6.4
       better-sqlite3: 8.6.0
-      mysql2: 3.6.0
+      mysql2: 3.9.8
       postgres: 3.3.5
     dev: true
 
@@ -21931,8 +21933,8 @@ packages:
     resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
     dev: true
 
-  /mysql2@3.6.0:
-    resolution: {integrity: sha512-EWUGAhv6SphezurlfI2Fpt0uJEWLmirrtQR7SkbTHFC+4/mJBrPiSzHESHKAWKG7ALVD6xaG/NBjjd1DGJGQQQ==}
+  /mysql2@3.9.8:
+    resolution: {integrity: sha512-+5JKNjPuks1FNMoy9TYpl77f+5frbTklz7eb3XDwbpsERRLEeXiW2PDEkakYF50UuKU2qwfGnyXpKYvukv8mGA==}
     engines: {node: '>= 8.0'}
     dependencies:
       denque: 2.1.0
@@ -24196,7 +24198,7 @@ packages:
   /puppeteer@18.2.1:
     resolution: {integrity: sha512-7+UhmYa7wxPh2oMRwA++k8UGVDxh3YdWFB52r9C3tM81T6BU7cuusUSxImz0GEYSOYUKk/YzIhkQ6+vc0gHbxQ==}
     engines: {node: '>=14.1.0'}
-    deprecated: < 19.4.0 is no longer supported
+    deprecated: < 22.8.2 is no longer supported
     requiresBuild: true
     dependencies:
       https-proxy-agent: 5.0.1
